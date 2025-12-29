@@ -1,0 +1,67 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.pure_titan",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "pure_titan",
+					"pivot": [0, 5.9, 0]
+				},
+				{
+					"name": "body",
+					"parent": "pure_titan",
+					"pivot": [0.3, 11.85, -1.4],
+					"cubes": [
+						{"origin": [-4, 11.85, -2], "size": [8, 12, 8], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 23.7, -1.8],
+					"cubes": [
+						{"origin": [-4, 23.9, -2], "size": [8, 8, 8], "uv": [0, 20]}
+					]
+				},
+				{
+					"name": "right_arm",
+					"parent": "body",
+					"pivot": [6.1, 23.6, 1.6],
+					"cubes": [
+						{"origin": [3.7, 11.6, -0.3], "size": [4, 12, 4], "uv": [32, 0]}
+					]
+				},
+				{
+					"name": "left_arm",
+					"parent": "body",
+					"pivot": [-6.1, 23.5, 1.6],
+					"cubes": [
+						{"origin": [-7.4, 11.6, -0.3], "size": [4, 12, 4], "uv": [32, 16]}
+					]
+				},
+				{
+					"name": "right_leg",
+					"pivot": [2, 11.8, -0.2],
+					"cubes": [
+						{"origin": [0.4, 0, -0.3], "size": [3.2, 11.9, 4], "uv": [0, 36]}
+					]
+				},
+				{
+					"name": "left_leg",
+					"pivot": [-1.7, 11.8, -0.2],
+					"cubes": [
+						{"origin": [-3.1, 0, -0.3], "size": [3.2, 12, 4], "uv": [32, 32]}
+					]
+				}
+			]
+		}
+	]
+}

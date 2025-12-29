@@ -1,0 +1,11 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "attackontitan:item/ultrahard_steel_blade"
+	},
+	"overrides": [
+		{ "predicate": { "damaged": 1, "damage": 0.3 }, "model": "attackontitan:item/steelblade_1" },
+		{ "predicate": { "damaged": 1, "damage": 0.6 }, "model": "attackontitan:item/steelblade_2" },
+		{ "predicate": { "damaged": 1, "damage": 0.9 }, "model": "attackontitan:item/steelblade_3" }
+	]
+}
