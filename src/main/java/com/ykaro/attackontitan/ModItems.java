@@ -12,22 +12,22 @@ import java.util.function.Supplier;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Registries.ITEM, AttackOnTitan.MODID);
 
-    // O EQUIPAMENTO (ODM GEAR)
+    // ODM GEAR
     public static final Supplier<Item> ODM_GEAR = ITEMS.register("odm_gear",
             () -> new ODMGearItem(ArmorMaterials.IRON, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1)));
 
-    // A MANOPLA / PUNHO VAZIO (ODM HANDLE)
+    // CABO VAZIO (HANDLE)
     public static final Supplier<Item> ODM_HANDLE = ITEMS.register("odm_handle",
             () -> new Item(new Item.Properties().stacksTo(1)));
 
-    // AS LÂMINAS SOLTAS (ITEM DE RECARGA)
-    // Nome atualizado para "refillblades" conforme a imagem
+    // REFILL (MUNIÇÃO)
     public static final Supplier<Item> REFILLBLADES = ITEMS.register("refillblades",
             () -> new Item(new Item.Properties().stacksTo(16)));
 
-
-    // No ModItems.java
+    // LÂMINA COMPLETA
     public static final Supplier<Item> ULTRAHARD_STEEL_BLADE = ITEMS.register("ultrahard_steel_blade",
             () -> new SwordItem(Tiers.DIAMOND, new Item.Properties()
-                    .durability(10) // Mantemos 10 para a barra de vida aparecer
-                    .attributes(SwordItem.createAttributes(Tiers.DIAMOND, 50.0f, -2.0f))));}
+                    .durability(10) // Define durabilidade máxima como 10
+                    .attributes(SwordItem.createAttributes(Tiers.DIAMOND, 46.0f, -2.4f))));
+    // 46 + 4 base do player = 50 de dano total
+}
